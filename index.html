@@ -11,14 +11,12 @@
     <meta property="og:description" content="pictures">
     <meta property="og:image" content="https://ilanolkies.com/img/2D8AD402-9700-4B8D-B30F-52729D04831B.jpeg">
   </head>
-  <body style="margin: 0; overflow: hidden;">
-    <img data-src="img/DSC_5804.JPG" width="1280" />
+  <body style="margin: 0;">
+    <img src="img/DSC_5804.JPG" width="1280" />
     <p>La Perla, Mar Del Plata, Argentina - 18 Jun 2023, 14:11</p>
     
-    <p id="space" style="height: 5120px;"></p>
-    
     <div style="display: flex;">
-      <img data-src="img/DSC_5271 2.jpg" width="640" />
+      <img data-src="img/DSC_5271 2.jpg" width="640"/>
       <img data-src="img/DSC_5280 2.jpg" width="640" />
     </div>
     <div style="display: flex;">
@@ -50,19 +48,18 @@
             })
           })
 
-          let loadedOne = false
+          for (let i = 1; i < lazyImages.length; i++) {
+            const prevImage = lazyImages[i-1]
+            const lazyImage = lazyImages[i]
 
-          lazyImages.forEach(lazyImage => {
-            lazyImageObserver.observe(lazyImage)
+            lazyImage.style.display = 'none'
 
-            lazyImage.addEventListener('load', () => {
-              if (!loadedOne) {
-                loadedOne = true
-                document.body.style.overflow = 'auto'
-                document.getElementById('space').remove()
-              }
+            prevImage.addEventListener('load', function () {
+              lazyImage.style.display = 'block'
             })
-          })
+
+            lazyImageObserver.observe(lazyImage)
+          }
         }
       });
     </script>
