@@ -17,65 +17,43 @@
 
     <div style="display: flex;">
       <div style="max-width: 100%; max-height: 90vh">
-        <img data-src="img/DSC_5271 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
-        <img data-src="img/DSC_5280 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
-        <img data-src="img/DSC_5293 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
-        <img data-src="img/DSC_5309 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
+        <img src="img/DSC_5271 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
+        <img src="img/DSC_5280 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
+        <img src="img/DSC_5293 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
+        <img src="img/DSC_5309 2.jpg" style="max-width: 50%; max-height: 45vh; float:left;" />
       </div>
     </div>
     
     <p>Arena del Mare, Genoa, Italia - 3 Feb 2023, 17:29, 17:41, 17:47, 17:52</p>
 
-    <img data-src="img/DSC_4973.jpeg" style="max-width: 100%; max-height: 90vh" />
+    <img src="img/DSC_4973.jpeg" style="max-width: 100%; max-height: 90vh" />
     <p>Corniglia, Cinque Terre, Italia - 1 Feb 2023, 17:01</p>
     <p>After climbing the stairs</p>
 
-    <img data-src="img/2D8AD402-9700-4B8D-B30F-52729D04831B.jpeg" style="max-width: 100%; max-height: 90vh" />
+    <img src="img/2D8AD402-9700-4B8D-B30F-52729D04831B.jpeg" style="max-width: 100%; max-height: 90vh" />
     <p>Corniglia, Cinque Terre, Italia - 1 Feb 2023, 16:39</p>
     <p>View of Manarola, just before climbing Scalinata Lardarina</p>
 
-    <img data-src="img/71C6CB20-D243-4E3C-8299-AF6E59BB1827.jpeg" style="max-width: 100%; max-height: 90vh" />
+    <img src="img/71C6CB20-D243-4E3C-8299-AF6E59BB1827.jpeg" style="max-width: 100%; max-height: 90vh" />
     <p>Amsterdam, Netherlands - 20 Jan 2023, 10:22</p>
     <p>Frosty morning</p>
 
-    <img data-src="img/90DD7688-39B3-45F2-8C99-837910AF2A2C.jpeg" style="max-width: 100%; max-height: 90vh" />
-    <img data-src="img/2DD8CD50-FAE4-4435-87EB-476FDC877D9A.jpeg" style="max-width: 100%; max-height: 90vh" />
+    <img src="img/90DD7688-39B3-45F2-8C99-837910AF2A2C.jpeg" style="max-width: 100%; max-height: 90vh" />
+    <img src="img/2DD8CD50-FAE4-4435-87EB-476FDC877D9A.jpeg" style="max-width: 100%; max-height: 90vh" />
     <p>Aviv Beach, Tel Aviv, Israel - 18 Jan 2023, 16:55</p>
     <p>Two views of the same sunset</p>
 
-    <img data-src="img/DEFF231B-1150-47D1-A1A1-F3C0BB63D549.jpeg" style="max-width: 100%; max-height: 90vh" />
+    <img src="img/DEFF231B-1150-47D1-A1A1-F3C0BB63D549.jpeg" style="max-width: 100%; max-height: 90vh" />
     <p>Masada, Israel - 16 Jan 2023, 10:16</p>
     <p>After climbing Masada Fortress</p>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHMH538P7T"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const lazyImages = [].slice.call(document.querySelectorAll('img'))
-
-        if ('IntersectionObserver' in window) {
-          const lazyImageObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                const lazyImage = entry.target
-                lazyImage.src = lazyImage.dataset.src
-                lazyImageObserver.unobserve(lazyImage)
-              }
-            })
-          })
-
-          for (let i = 1; i < lazyImages.length; i++) {
-            const prevImage = lazyImages[i-1]
-            const lazyImage = lazyImages[i]
-
-            lazyImage.style.display = 'none'
-
-            prevImage.addEventListener('load', function () {
-              lazyImage.style.display = 'block'
-            })
-
-            lazyImageObserver.observe(lazyImage)
-          }
-        }
-      });
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QHMH538P7T');
     </script>
   </body>
 </html>
