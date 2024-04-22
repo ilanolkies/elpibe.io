@@ -14,51 +14,7 @@
     <meta property="og:description" content="pictures">
     <meta property="og:image" content="https://elpibe.io/img/2D8AD402-9700-4B8D-B30F-52729D04831B.jpeg">
 
-    <style>
-      body {
-        margin: 0;
-        width: 100%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .picture {
-        max-width: 100%;
-        max-height: 80vh;
-        min-height: 200px;
-      }
-
-      .four-container {
-        display: block;
-        max-width: 100%;
-        max-height: 80vh;
-      }
-
-      .four-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-      }
-
-      .four-image {
-        max-width: 100%;
-        max-height: 40vh;
-      }
-
-      .two-container {
-        display: flex;
-        flex-direction: column;
-      }
-
-      hr {
-        width: 100%;
-      }
-
-      p {
-        text-align: center;
-        margin-bottom: 50px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <script>window.twttr = (function(d, s, id) {
@@ -163,98 +119,8 @@
       <p itemprop="description">La Perla, Mar Del Plata, Argentina - 18 Jun 2023, 14:11</p>
     </div>
 
-    <hr />
-
-    <h2>Italia 2023</h2>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/FCE2388D-F146-4886-BCA0-726FFB567990.jpeg" loading="lazy" class="picture" alt="Murano" />
-      <p itemprop="description">Murano, Venezia, Italia - 5 Feb 2023, 18:06</p>
-    </div>
-    
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/DSC_5513 2.jpg" loading="lazy" class="picture" alt="Pnte San Trovaso" />
-      <p itemprop="description">Pnte San Trovaso, Venezia, Italia - 4 Feb 2023, 16:44</p>
-    </div>
-    
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <div class="four-container">
-        <div class="four-wrapper">
-          <img itemprop="image" src="img/DSC_5271 2.jpg" loading="lazy" class="four-image" alt="Arena del Mare 1" />
-          <img itemprop="image" src="img/DSC_5280 2.jpg" loading="lazy" class="four-image" alt="Arena del Mare 2" />
-          <img itemprop="image" src="img/DSC_5293 2.jpg" loading="lazy" class="four-image" alt="Arena del Mare 3" />
-          <img itemprop="image" src="img/DSC_5309 2.jpg" loading="lazy" class="four-image" alt="Arena del Mare 4" />
-        </div>
-      </div>
-      <p itemprop="description">Arena del Mare, Genoa, Italia - 3 Feb 2023, 17:29, 17:41, 17:47, 17:52</p>
-    </div>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/DSC_4973.jpeg" loading="lazy" class="picture" alt="Corniglia 2" />
-      <p itemprop="description">
-        Corniglia, Cinque Terre, Italia - 1 Feb 2023, 17:01<br />
-        After climbing the stairs
-      </p>
-    </div>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/2D8AD402-9700-4B8D-B30F-52729D04831B.jpeg" loading="lazy" class="picture" alt="Corniglia 1" />
-      <p itemprop="description">
-        Corniglia, Cinque Terre, Italia - 1 Feb 2023, 16:39<br />
-        View of Manarola, just before climbing Scalinata Lardarina
-      </p>
-    </div>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/DSC_3892.jpeg" loading="lazy" class="picture" alt="Cathedral of Santa Maria del Fiore" />
-      <p itemprop="description">Cathedral of Santa Maria del Fiore, Firenze, Italia - 28 Jan 2023, 16:22</p>
-    </div>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/CCF59FB5-2329-453A-95FF-E7B17498D740.jpeg" loading="lazy" class="picture" alt="Mercato Centrale" />
-      <p itemprop="description">Mercato Centrale, Firenze, Italia - 28 Jan 2023, 12:23</p>
-    </div>
-
-    <hr />
-
-    <h2>Belgium, Netherlands 2023</h2>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/F3EE597F-7E6B-43E1-A86E-C229BF67979D.jpeg" loading="lazy" class="picture" alt="Friterie Tavora" />
-      <p itemprop="description">
-        Friterie Tavora, Brussels, Belgium - 22 Jan 2023, 14:49<br />
-        A must in all diets
-      </p>
-    </div>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/71C6CB20-D243-4E3C-8299-AF6E59BB1827.jpeg" loading="lazy" class="picture" alt="Amsterdam" />
-      <p itemprop="description">
-        Amsterdam, Netherlands - 20 Jan 2023, 10:22<br />
-        Frosty morning
-      </p>
-    </div>
-
-    <hr />
-
-    <h2>Israel 2023</h2>
-
-    <div itemscope itemtype="https://schema.org/Photograph" class="two-container">
-      <img itemprop="image" src="img/90DD7688-39B3-45F2-8C99-837910AF2A2C.jpeg" loading="lazy" class="picture" alt="Aviv Beach 1" />
-      <img itemprop="image" src="img/2DD8CD50-FAE4-4435-87EB-476FDC877D9A.jpeg" loading="lazy" class="picture" alt="Aviv Beach 2" />
-      
-      <p itemprop="description">
-        Aviv Beach, Tel Aviv, Israel - 18 Jan 2023, 16:55<br />
-        Two views of the same sunset
-      </p>
-    </div>
-
-    <div itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" src="img/DSC_1195.jpeg" loading="lazy" class="picture" alt="Masada" />
-      <p itemprop="description">
-        Masada, Israel - 16 Jan 2023, 10:16<br />
-        After climbing Masada Fortress
-      </p>
+    <div class="pages">
+      <span>&lt;</span> <a href="2.html">1</a> <a href="2.html">&gt;</a>
     </div>
 
     <!-- Google tag (gtag.js) -->

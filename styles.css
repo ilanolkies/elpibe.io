@@ -1,0 +1,48 @@
+
+body {
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  max-width: 100%;
+  max-height: 80vh;
+  min-height: 200px;
+}
+
+.four-container {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.four-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.four-image {
+  max-width: 100%;
+  max-height: 40vh;
+}
+
+.two-container {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pages {
+  margin: 20px;
+}
