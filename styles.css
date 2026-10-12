@@ -8,6 +8,8 @@ body {
 }
 
 .picture {
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 80vh;
   min-height: 200px;
@@ -25,6 +27,8 @@ body {
 }
 
 .four-image {
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 40vh;
 }
